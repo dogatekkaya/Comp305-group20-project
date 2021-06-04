@@ -1,21 +1,6 @@
-# Comp305-group20-project
+"# Comp305-group20-project
 DOCTORS WITHOUT SCHEDULES
-
-Our first attempt was sorting patients in descending order (the patient with the longest time needed for visiting comes first). 
-In the example:  patients (5,3,2,2) and doctors (7,3,2). The patient with 5 hours has only one choice while a patient with 3 hours has 3 choices. If patient with time t1 and doctor with time t1, we need to map them together. Therefore, we decided to change our algorithm. 
-
-
-Our second attempts was to sort the patients in descending order and sorting doctors in ascending order, and then starting from the first patient and in a loop, finding the first doctor with the shortest time that can visit our current patient. The patient’s time is subtracted from the doctor’s time and it is started over with the next patient and continues until all patients are set to a doctor. 
-But in the case of: doctors(5,6) and patients(4,3,2,2), the algorithm wouldn’t work. We also checked if sorting both patients and doctors in descending order and mapping the longest timed patient to the longest timed doctor would work, but it didn’t.  
-
-We then decided on the final solution where nothing is sorted and starting from the first patient, it is mapped to the first doctor possible. The function is recalled and whenever we couldn’t set anymore patients to doctors, we undo our works and start from the beginning until we find out the answer. 
-There are two inputs, doctors and patients. In a for loop, a doctor whose available hours are more than the patient’s hours are found. 
-Recursion: We settled one patient to one doctor and we call the function again for the rest of the patients, then return true if it was successful.
-
-
-
-
-
+Our code is a python code.
 
 Test Cases
 
@@ -52,5 +37,20 @@ Time for second given test: 7.84475e-03
 
 Test Cases give a result in a pattern of d^p (d being number of docs and p being number of patients) this is because any chosen patient has d number of alternatives for doctors. 
 As can be seen from  the runtimes. Time complexity is directly correlated with number of doctors and number of patients. As they increase required time also increases. One other factor is the ratio of number of patients to number of doctors. As that increases more time is required for the iteration algorithm. Of course number of free hours also affect the time. 
+
+
+Our Attempts at the Solution 
+Our first attempt was sorting patients in descending order (the patient with the longest time needed for visiting comes first). 
+In the example:  patients (5,3,2,2) and doctors (7,3,2). The patient with 5 hours has only one choice while a patient with 3 hours has 3 choices. If patient with time t1 and doctor with time t1, we need to map them together. Therefore, we decided to change our algorithm. 
+
+Our second attempts was to sort the patients in descending order and sorting doctors in ascending order, and then starting from the first patient and in a loop, finding the first doctor with the shortest time that can visit our current patient. The patient’s time is subtracted from the doctor’s time and it is started over with the next patient and continues until all patients are set to a doctor. 
+But in the case of: doctors(5,6) and patients(4,3,2,2), the algorithm wouldn’t work. We also checked if sorting both patients and doctors in descending order and mapping the longest timed patient to the longest timed doctor would work, but it didn’t.  
+
+We then decided on the final solution where nothing is sorted and starting from the first patient, it is mapped to the first doctor possible. The function is recalled and whenever we couldn’t set anymore patients to doctors, we undo our works and start from the beginning until we find out the answer. 
+There are two inputs, doctors and patients. In a for loop, a doctor whose available hours are more than the patient’s hours are found. 
+Recursion: We settled one patient to one doctor and we call the function again for the rest of the patients, then return true if it was successful.
+
+
+
 
 
