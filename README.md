@@ -42,8 +42,8 @@ Patient 13: 2
 Time for second given test: 7.84475e-02 
 With no results since it is not applicable.
 
-Test Cases give a result in a pattern of d^p (d being number of docs and p being number of patients) this is because any chosen patient has d number of alternatives for doctors. 
-As can be seen from  the runtimes. Time complexity is directly correlated with number of doctors and number of patients. As they increase required time also increases. One other factor is the ratio of number of patients to number of doctors. As that increases more time is required for the iteration algorithm. Of course number of free hours also affect the time. 
+
+Test Cases give a result in a pattern of d^p (d being number of docs and p being number of patients) this is because any chosen patient has d number of alternatives for doctors. As can be seen from the runtimes. Time complexity is directly correlated with number of doctors and number of patients. As they increase required time also increases.
 
 
 Our Attempts at the Solution 
