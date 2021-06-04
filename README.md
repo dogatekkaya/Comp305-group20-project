@@ -1,6 +1,9 @@
 "# Comp305-group20-project
+
 DOCTORS WITHOUT SCHEDULES
+
 Our code is a python code.
+
 
 Test Cases
 
@@ -40,6 +43,7 @@ As can be seen from  the runtimes. Time complexity is directly correlated with n
 
 
 Our Attempts at the Solution 
+
 Our first attempt was sorting patients in descending order (the patient with the longest time needed for visiting comes first). 
 In the example:  patients (5,3,2,2) and doctors (7,3,2). The patient with 5 hours has only one choice while a patient with 3 hours has 3 choices. If patient with time t1 and doctor with time t1, we need to map them together. Therefore, we decided to change our algorithm. 
 
