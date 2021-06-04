@@ -4,9 +4,7 @@ DOCTORS WITHOUT SCHEDULES
 
 Our code is a python code.
 
-
 Test Cases
-
 Doctor A: 8
 Doctor B: 8
 Doctor C: 8
@@ -19,6 +17,11 @@ Patient 6: 1
 Patient 7: 4
 Patient 8: 1
 Time for first given test: 4.3699999999993744e-05
+
+With the RESULT:
+Doctor doctor1 sees Patients ['patient8', 'patient6', 'patient4', 'patient2', 'patient1']
+Doctor doctor2 sees Patients ['patient5', 'patient3']
+Doctor doctor3 sees Patients ['patient7']
 
 Doctor A: 9
 Doctor B: 9
@@ -36,7 +39,8 @@ Patient 10: 2
 Patient 11: 2
 Patient 12: 2
 Patient 13: 2
-Time for second given test: 7.84475e-03
+Time for second given test: 7.84475e-02 
+With no results since it is not applicable.
 
 Test Cases give a result in a pattern of d^p (d being number of docs and p being number of patients) this is because any chosen patient has d number of alternatives for doctors. 
 As can be seen from  the runtimes. Time complexity is directly correlated with number of doctors and number of patients. As they increase required time also increases. One other factor is the ratio of number of patients to number of doctors. As that increases more time is required for the iteration algorithm. Of course number of free hours also affect the time. 
